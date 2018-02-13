@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Client from './Client'
 
 class ClientsContainer extends Component {
   constructor(props) {
@@ -23,10 +24,7 @@ class ClientsContainer extends Component {
       <div>
         {this.state.clients.map((client) => {
           return(
-            <div className="tile" key={client.id} >
-              <h4>{client.first_name}</h4>
-              <p>{client.email}</p>
-            </div>
+            <Client client={client} key={client.id}></Client>
           )
         })}
       </div>

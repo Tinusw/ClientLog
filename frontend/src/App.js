@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ClientsContainer from './components/ClientsContainer'
+import ClientForm from './components/ClientForm'
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
           <h1 className="App-title">Client List</h1>
         </header>
         <ClientsContainer/>
+        <ClientForm/>
       </div>
     );
   }
